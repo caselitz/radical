@@ -242,6 +242,10 @@ function download()
   return 0
 }
 
+cversion=`cmake --version | grep -Po "(?<=version ).*"`
+echo "CMAKE version: $cversion"
+return 0
+
 CMAKE_VERSION="2.8.12.2"
 EIGEN_VERSION="3.2.10"
 GLOG_VERSION="0.3.5"
